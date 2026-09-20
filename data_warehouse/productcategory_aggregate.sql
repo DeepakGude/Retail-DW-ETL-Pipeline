@@ -4,7 +4,7 @@ SELECT *
 FROM guded_datawarehousing.ProductCategoryDimension
 
 ALTER TABLE guded_datawarehousing.ProductCategoryDimension
-ADD PRIMARY KEY ProductCategoryKey;
+ADD PRIMARY KEY (ProductCategoryKey);
 
 CREATE TABLE guded_datawarehousing.One_Way_Revenue_Agg_By_ProductCategory AS
 SELECT *
