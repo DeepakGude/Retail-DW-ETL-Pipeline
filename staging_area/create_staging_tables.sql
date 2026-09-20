@@ -25,11 +25,11 @@ CREATE TABLE CustomerDimension
 
 CREATE TABLE CalendarDimension
 (
-  CalendarKey INT NOT NULL,
-  FullDate DATE NOT NULL,
-  MonthYear INT NOT NULL,
-  Year INT NOT NULL,
-  PRIMARY KEY (CalendarKey)
+  CalendarKey INT NOT NULL AUTO_INCREMENT,
+  FullDate DATE NOT NULL,
+  MonthYear INT NOT NULL,
+  Year INT NOT NULL,
+  PRIMARY KEY (CalendarKey)
 );
 
 CREATE TABLE StoreDimension
