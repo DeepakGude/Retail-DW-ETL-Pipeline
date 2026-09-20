@@ -1,17 +1,21 @@
 CREATE TABLE ProductDimension
 (
-  ProductKey INT NOT NULL,
-  ProductID CHAR(3) NOT NULL,
-  ProductName VARCHAR(25) NOT NULL,
-  SalesProductPrice NUMERIC(7,2) NOT NULL,
-  ProductType VARCHAR(20) NOT NULL,
-  VendorID CHAR(2) NOT NULL,
-  VendorName VARCHAR(25) NOT NULL,
-  CategoryID CHAR(2) NOT NULL,
-  CategoryName VARCHAR(25) NOT NULL,
-  RentalProductPriceDaily NUMERIC(7,2) NOT NULL,
-  RentalProductPriceWeekly NUMERIC(7,2) NOT NULL,
-  PRIMARY KEY (ProductKey)
+  ProductKey INT NOT NULL,
+  ProductID CHAR(3) NOT NULL,
+  ProductName VARCHAR(25) NOT NULL,
+
+  SalesProductPrice NUMERIC(7,2) NULL,
+
+  ProductType VARCHAR(20) NOT NULL,
+  VendorID CHAR(2) NOT NULL,
+  VendorName VARCHAR(25) NOT NULL,
+  CategoryID CHAR(2) NOT NULL,
+  CategoryName VARCHAR(25) NOT NULL,
+
+  RentalProductPriceDaily NUMERIC(7,2) NULL,
+  RentalProductPriceWeekly NUMERIC(7,2) NULL,
+
+  PRIMARY KEY (ProductKey)
 );
 
 CREATE TABLE CustomerDimension
