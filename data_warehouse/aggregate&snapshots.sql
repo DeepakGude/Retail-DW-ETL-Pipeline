@@ -1,7 +1,7 @@
 -- INITIAL LOAD OF ONE WAY AGGREGATE BY PRODUCT CATEGORY FROM DS TO DW
 CREATE TABLE guded_datawarehousing.ProductCategoryDimension AS
 SELECT *
-FROM guded_datawarehousing.ProductCategoryDimension
+FROM guded_datastaging.ProductCategoryDimension
 
 ALTER TABLE guded_datawarehousing.ProductCategoryDimension
 ADD PRIMARY KEY (ProductCategoryKey);
